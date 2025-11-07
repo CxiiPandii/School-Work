@@ -1,1 +1,2 @@
-Hello! This repository is grouped up by the languages i've used while acquiring my degree as well as display of my skills and strengths within each language!
+Hello! This repository is grouped up by the languages i've used while acquiring my degree . This one specfically is for a few Java programs that I had to create while I was in school.
+
