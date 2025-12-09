@@ -22,17 +22,17 @@ PrimaryExpr ::= IDENT | ICONST | FCONST | SCONST | (Expr)
 We were also given a table of associativity guideline:
 Table of Associativity and Precedence Levels of Operators
 Precedence       Operator                   Description                         Associativity
-1                  **                      Exponentiation                       Right-to-Left
-2              Unary +, -, !         Unary plus and minus, and NOT              Right-to-Left
-3              *, /, %, .x.           Multiplication, Division,                 Left-to-Right
+1.                  **                      Exponentiation                       Right-to-Left
+2.              Unary +, -, !         Unary plus and minus, and NOT              Right-to-Left
+3.              *, /, %, .x.           Multiplication, Division,                 Left-to-Right
                                   Remainder, and string repetition                                
-4               +, -, .              Addition, Subtraction, and                 Left-to-Right
+4.               +, -, .              Addition, Subtraction, and                 Left-to-Right
                                           Concatenation
-5              <, >=, ==,          Relational operators for numeric             Left-to-Right
+5.              <, >=, ==,          Relational operators for numeric             Left-to-Right
               @le, @gt,@eq                and string types
-6                 &&                      Logical AND                           Left-to-Right
-7                 ||                      Logical OR                            Left-to-Right
-8            =, +=, -=, .=            Assignment operators                      Right-to-Left
+6.                 &&                      Logical AND                           Left-to-Right
+7.                 ||                      Logical OR                            Left-to-Right
+8.            =, +=, -=, .=            Assignment operators                      Right-to-Left
 
 1. The BPL language has two data types: Numeric and string. The data type is dynamically bound
 to a variable name in an assignment statement.
