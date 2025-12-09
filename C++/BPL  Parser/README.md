@@ -1,27 +1,27 @@
 In this programming assignment, we built an Interpreter for a Basic Perl-Like programming language, called BPL. The grammar rules of the language and its tokens were given in Programming Assignments 1 and 2. We are required to modify the parser we have implemented for the BPL language to implement an interpreter for it.  The specifications of the grammar rules are described in EBNF notations as follows.
 
-Prog ::= StmtList
-StmtList ::= Stmt; { Stmt; }
-Stmt ::= IfStmt | AssignStmt | PrintLnStmt
-PrintLnStmt ::= PRINTLN (ExprList)
-IfStmt ::= IF (Expr) ‘{‘ StmtList ‘}’ [ ELSE ‘{‘ StmtList ‘}’ ]
-Var ::= IDENT
-ExprList ::= Expr { , Expr }
-AssignStmt ::= Var AssigOp Expr
-Expr ::= OrExpr
-AssigOp ::= ( = | += | -= | .= )
-OrExpr ::= AndExpr { || AndExpr }
-AndExpr ::= RelExpr { && RelExpr }
-RelExpr ::= AddExpr [ ( @le | @gt | @eq | < | >= | == ) AddExpr ]
-AddExpr :: MultExpr { ( + | - | . ) MultExpr }
-MultExpr ::= UnaryExpr { ( * | / | % | .x. ) UnaryExpr }
-UnaryExpr ::= [( - | + | ! )] ExponExpr
-ExponExpr ::= PrimaryExpr { ** PrimaryExpr }
-PrimaryExpr ::= IDENT | ICONST | FCONST | SCONST | (Expr)
+1.Prog ::= StmtList
+2.StmtList ::= Stmt; { Stmt; }
+3.Stmt ::= IfStmt | AssignStmt | PrintLnStmt
+4.PrintLnStmt ::= PRINTLN (ExprList)
+5.IfStmt ::= IF (Expr) ‘{‘ StmtList ‘}’ [ ELSE ‘{‘ StmtList ‘}’ ]
+6.Var ::= IDENT
+7.ExprList ::= Expr { , Expr }
+8.AssignStmt ::= Var AssigOp Expr
+9.Expr ::= OrExpr
+10.AssigOp ::= ( = | += | -= | .= )
+11.OrExpr ::= AndExpr { || AndExpr }
+12.AndExpr ::= RelExpr { && RelExpr }
+13.RelExpr ::= AddExpr [ ( @le | @gt | @eq | < | >= | == ) AddExpr ]
+14.AddExpr :: MultExpr { ( + | - | . ) MultExpr }
+15.MultExpr ::= UnaryExpr { ( * | / | % | .x. ) UnaryExpr }
+16.UnaryExpr ::= [( - | + | ! )] ExponExpr
+17.ExponExpr ::= PrimaryExpr { ** PrimaryExpr }
+18.PrimaryExpr ::= IDENT | ICONST | FCONST | SCONST | (Expr)
 
 We were also given a table of associativity guideline:
 Table of Associativity and Precedence Levels of Operators
-Precedence       Operator                   Description                         Associativity
+Precedence    ||    Operator         ||          Description              ||           Associativity
 1.                  **                      Exponentiation                       Right-to-Left
 2.              Unary +, -, !         Unary plus and minus, and NOT              Right-to-Left
 3.              *, /, %, .x.           Multiplication, Division,                 Left-to-Right
