@@ -1,7 +1,7 @@
 In this programming assignment, we built an Interpreter for a Basic Perl-Like programming language, called BPL. The grammar rules of the language and its tokens were given in Programming Assignments 1 and 2. We are required to modify the parser we have implemented for the BPL language to implement an interpreter for it.  The specifications of the grammar rules are described in EBNF notations as follows.
 
-1.Prog ::= StmtList
-2.StmtList ::= Stmt; { Stmt; }
+1.Prog ::= StmtList /n
+2.StmtList ::= Stmt; { Stmt; } /n
 3.Stmt ::= IfStmt | AssignStmt | PrintLnStmt
 4.PrintLnStmt ::= PRINTLN (ExprList)
 5.IfStmt ::= IF (Expr) ‘{‘ StmtList ‘}’ [ ELSE ‘{‘ StmtList ‘}’ ]
