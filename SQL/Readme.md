@@ -1,2 +1,3 @@
-This section is specfically for our Lab 13 Project where we were tasked to pitch to our represective companys about building a database system for diffrent situations. 
-Our group decided to create a travel agency where we will pitch the idea of  ease of sharing travel package details with out group members who would like to go on this trip.
+The section shows the SQL Scripts I have formulated while in class for the labs' objectives. 
+
+We used Oracle Apex for our database system. While also testing certain scripts in Microsoft's version of their database system here and there, most of our coding was done using Apex.
