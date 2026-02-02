@@ -1,9 +1,7 @@
 What is being done?
-
 This project is the creation of a database and application that allows users to access data about vacation accommodations, enter personal information into the database, and generate an order for a vacation package. The database will contain entity tables for customers, packages, flights, transportation, hotels, activities, and other important aspects of booking a vacation. When using the application, users will be able to make queries to access rows of data that fit criteria that they enter. Some examples of criteria that can be entered are upper and lower bounds on price, date, and location. Once the user is done looking at the data, they will be able to generate an order for a vacation package in the form of an invoice, which will contain all relevant information about what is being purchased.
 
 How is it being done?
-
 For this project, an application and database are being designed and built by a small team of developers. The first thing the team addressed was what the database will need to store data about. The developers are creating entity- relationship diagrams and dependency diagrams in order to ensure that all necessary data will be stored and normalized. Once the entities are properly planned, they will be built and populated with sample data, and then tested to ensure that the data is correct and the data tables are structured properly. The implementation and testing of the database will be done using Oracle Application Express software, and this software will also be used by the clients to access the data. Once the developers are sure that the tables are built correctly, they will develop an app that will allow users to access and submit the data they need to book a vacation, and test the application once it is done. The application will be accessible on a personal computer that has access to Oracle software.
 
 Who is doing it?
